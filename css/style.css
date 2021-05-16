@@ -1,12 +1,13 @@
-body input {
+body {
         font-size: 14px;
-        font-family: arial,sans-serif;
+        font-family: arial, sans-serif;
 }
 
 a {
     text-decoration: none;
     color: black;
     margin-right: 25px;
+    
 }
 
 a:hover {
@@ -42,46 +43,54 @@ img {
 
 #logo {
     position: absolute;
-    top:  45%;
+    top:  40%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin-top: 50px;
 }
 
 form {
     display: block;
     max-width: 70%;
     position: absolute;
-    top:  60%;
+    top:  45%;
     left: 50%;
     transform: translate(-50%,-50%);
+    margin-top: 150px;
 }
 
 #search {
-    border: thin outset;
-    border-radius: 20px;
+    border: 1px solid black;
+    width: 50vw;
+    border-radius: 24px;
     height: 40px;
     display: flex;
-    margin-left: 10%;
+    margin-left: 0%;
+    max-width: 500px;
 }
 
-#search #searchbox {
-    width: 45vw;
+#search .searchbox {
+    width: 40vw;
+    border: none;
+    margin-left: 40px;
+    max-width: 400px;
 }
 
 #input-image-1 {
     position:absolute;
-    top: 15px;
-    left:5px;
-    width:24px;
-    height:24px;
+    top: 10px;
+    left: 3%;
+    width: 24px;
+    height: 24px;
 }
 
 #input-image-2 {
     position:absolute;
     top: 8px;
-    right:-20px;
-    width:24px;
-    height:30px;
+    right: -3%;
+    width:20px;
+    height:24px;
+    border-radius: 24px;
 }
 
 *:focus {
@@ -100,7 +109,7 @@ button {
 
 #buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #footer {
